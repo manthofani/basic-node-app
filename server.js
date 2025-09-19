@@ -39,6 +39,9 @@ init().catch(err => {
 app.use('/api/auth', authRoutes);
 app.use('/api/items', itemRoutes);
 app.use('/api/compare', compareRoutes);
+app.get("/api/hello", (req, res) => {
+  res.json({ msg: "Hello from Express on Vercel!" });
+});
 
 module.exports = app;
 
