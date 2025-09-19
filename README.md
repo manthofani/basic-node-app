@@ -1,8 +1,7 @@
 # Simple MVC Backend API
 
 ## Overview
-This is a Node.js Express backend API with SQLite database, featuring user authentication and CRUD operations for items. The project was successfully imported from GitHub and configured for the Replit environment.
-
+This is a Node.js Express backend API with SQLite database, featuring user authentication and CRUD operations for items.
 ## Architecture
 - **Backend**: Node.js with Express framework
 - **Database**: SQLite with database.sqlite file
