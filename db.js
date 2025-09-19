@@ -3,13 +3,8 @@ const path = require('path');
 const config = require('./config');
 const dbFile = path.join(__dirname, config.dbFile);
 
-const db = new sqlite3.Database(dbFile, sqlite3.OPEN_READONLY, (err) => {
-  if (err) {
-    console.error("❌ Error opening SQLite DB:", err.message);
-  } else {
-    console.log("✅ Connected to SQLite DB at", dbPath);
-  }
-});
+const db = new sqlite3.Database(dbFile);
+
 
 function run(sql, params) {
   params = params || [];
